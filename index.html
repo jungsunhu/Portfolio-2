@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coreby_S.Portfolio</title>
+    <link rel="stylesheet" href="Style.Css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <style>
+        html{
+            scroll-behavior: smooth;
+    
+        }
+        
+    </style>
+</head> 
+<body>
+    
+    <header class="hero">
+        <div class="profile"></div>
+        <h1>Ojal Sagvekar</h1>
+     <img src="pfp.webp" alt="pfp" class="pfp" width="200" height="200">
+    </div>
+    
+    </header>
+    <p>Designs From Spiral Mind.</p>
+<br>
+
+<div class="info">
+<h3>Hey There! Myself Ojal Sagvekar  A 16 Year old rookie graphic Designer. I am still a student learning and discovering.
+
+</h3>
+</div>
+<br>                                         
+<div class="experience">
+    <h3>Currently 11th Grader</h3>
+</div>
+<div class="experience">
+    <h3>1yr+ experience in Canva. And learning Figma</h3>
+</div>
+<div class="experience">
+    <h3>Basic Frontend Coding Experience(eg.this Portfolio)</h3>
+</div>
+<div class="experience">
+    <h3>Strong Knowledge of AI Using</h3>
+</div>
+
+
+<div class="h2">
+MY PROJECTS
+</div>
+<br>
+<br>
+    <h2>LOGOS</h2>
+    <section class="gallery"> 
+       
+        <div class="project">
+            <img src="design 01.png" alt="L1">
+            <h2> HUEMARK</h2>
+            <p>Makeup/Skincare Brand</p>
+            <h4>LOGOS S01</h4>
+        </div>
+        <div class="project">
+            <img src="design 03.png" alt="L2">
+            <h2> SNACK STAMPS</h2>
+            <p>Food/Snack Brand</p>
+            <h4>LOGOS S02</h4>
+        </div>
+        <div class="project">
+            <img src="design 04.png" alt="L3">
+            <h2> INKO</h2>
+            <p>Sationary Brand</p>
+            <h4>LOGOS S03</h4>
+        </div>
+        <div class="project">
+            <img src="design 05.png" alt="L4">
+            <h2> MARKNEXT</h2>
+            <p>Tech Brand</p>
+            <h4>LOGOS S04</h4>
+        </div>
+        <div class="project">
+            <img src="design 06.jpeg" alt="L5">
+            <h2> OS HANDLERS</h2>
+            <p>CONGLOMERATE Brand</p>
+            <h4>LOGOS S05</h4>
+        </div>
+       
+
+    </section>
+    <h2>WALLPAPERS</h2>
+    <section class="gallery">
+        <div class="project">
+            <img src="design(W) 01.png " alt="W1">
+            <h2> FORAL(PATTERN)</h2>
+            <h4>WALLPAPERS S01</h4>
+        </div>
+        <div class="project">
+            <img src="design(W) 02.png " alt="W2">
+            <h2> FORAL(GRAPHICAL S1)</h2>
+            <h4>WALLPAPERS S02</h4>
+        </div>
+        <div class="project">
+            <img src="design(W) 03.png " alt="W3">
+            <h2> FORAL(GRADIENT S1)</h2>
+            <h4>WALLPAPERS S03</h4>
+        </div>
+        <div class="project">
+            <img src="design(W) 04.png " alt="W4">
+            <h2> FORAL(GRADIENT S2)</h2>
+            <h4>WALLPAPERS S04</h4>
+        </div>
+        <div class="project">
+            <img src="design(W) 05.png " alt="W5">
+            <h2> FORAL(GRAPHICAL S2)</h2>
+            <h4>WALLPAPERS S05</h4>
+        </div>
+    </section> 
+    <h2>POSTERS</h2>
+    <section class="gallery">
+        <div class="project">
+            <img src="design(P) 01.jpg " alt="P1">
+            <h2> ELEMENTS (FLOWER)</h2>
+            <h4>POSTER S01</h4>
+        </div>
+        <div class="project">
+            <img src="design(P) 02.png " alt="P2" height="335">
+            <h2> ELEMENTS (TREE)</h2>
+            <h4>POSTER S02</h4>
+        </div>
+        <div class="project">
+            <img src="design(P) 03.png " alt="P3" height="335">
+            <h2> ELEMENTS(WATER)</h2>
+            <h4>POSTER S03</h4>
+        </div>
+        <div class="project">
+            <img src="design(P) 04.png " alt="P4" height="335">
+            <h2> ELEMENTS (FIRE)</h2>
+            <h4>POSTER S04</h4>
+        </div>
+        <div class="project">
+            <img src="design(P) 05.png " alt="P5" height="335">
+            <h2> ELEMENTS (SAND)</h2>
+            <h4>POSTER S05</h4>
+        </div>
+    </section>
+    
+    
+        
+    <footer> 
+         <p>| Contact For More Designs |</p>
+    
+    <a href="https://www.instagram.com/coreby_s"> 
+        <img src="IG.png" alt="IG" width="50" height="50">
+    </a>
+    <h6>ojalsagvekar29@gmail.com</h6>
+</footer>
+<script>
+    
+window.addEventListener("DOMContentLoaded", () => {
+    const experienceHeaders = document.querySelectorAll('.experience h3');
+    console.log("Found", experienceHeaders.length, "experience headers");
+
+    window.addEventListener('scroll' , () => {
+    experienceHeaders.forEach((el, index) => {
+        const boxTop = el.getBoundingClientRect(). top;
+        const isVisible = boxTop < window.innerHeight - 100;
+
+        if (isVisible && !el.classList.contains('visible')) {
+            setTimeout(()=> {
+                el.classList.add('visible');
+            }, index * 150);
+           
+        }
+    });
+});
+});
+
+</script>
+
+
+
+
+
+</body>
+</html>

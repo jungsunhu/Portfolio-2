@@ -1,0 +1,198 @@
+body {
+    margin: 0%;
+    font-family: 'DM Sans', sans-serif;
+    background-color:  #7a1cac;
+    border: #f9f4fc;
+    color:#2e073f;
+    text-align: center;
+    background: linear-gradient(to bottom right, #ebebeb,#7a1cac);
+    
+
+}
+.header{
+    content: "";
+    position:absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #650579, #ededf7),#340538;
+    background-size: 300% 300%;
+    animation: pulseGradient 6s ease infinite;
+    z-index: -1;
+}
+p{
+    padding-top: 0px;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+.hero {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   padding: 30px 40px 0px ;
+   gap: 20px;
+   transition: transform 0.3s ease;
+}
+
+.pfp{
+    animation: float 3s ease-in-out infinite;
+    border-radius: 50%;
+}
+ 
+@keyframes float {
+    0%,100% { transform: translateY(0px);}
+    50% {transform: translateY(-8px);}
+}
+
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    letter-spacing: 1px;
+    
+
+}
+.hero:hover {
+    transform: scale(1.03);
+    color: #ead4ec;
+    background:linear-gradient(to right,#13011d, #d38cff);
+
+}
+
+
+.info{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #423141;
+    margin: 0px 20px 10px 20px;
+    border: #140b0b 1px solid;
+    border-radius: 10px;
+}
+.info:hover {
+    
+    color: #ead4ec;
+    background:linear-gradient(to right,#13011d, #d38cff);
+
+}
+   
+.experience {
+    padding: 20px 0px 0px 0px;
+
+    position: relative;
+    border: 0px solid ;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.experience::before {
+    content: "";
+    position:absolute;
+    inset: 0;
+    background: linear-gradient(45deg, #650579, #ededf7),#340538;
+    background-size: 300% 300%;
+    animation: pulseGradient 6s ease infinite;
+    z-index: -1;
+}
+@keyframes pulseGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
+.experience h3{ 
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s cubic-bezier(0.215,0.61,0.355,1); 
+}
+.experience h3.visible{
+    opacity: 1;
+    transform: translateY(0);
+}
+.experience h3{
+
+    border: 5px solid #130814;
+    border-radius: 999px;
+    font-size: x-large;
+    padding: 3%;
+    margin: 0px 200px 50px 200px;
+    background-color: liner-gradient;
+    color: #ebebeb;
+    font-family: 'comic neue', cursive;
+    background: linear-gradient(to right, #b999c9,#25032e);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.experience h3:hover{
+    box-shadow: 0 0 25px rgba(174, 144, 255, 0.6);
+    transform: scale(1.05);
+    background: linear-gradient(to right, #13011d,#d99df5);
+    letter-spacing: 1px;
+    color: #d38cff;
+    transition: all 0.3s ease;
+}
+
+.h2{
+    margin: 100px 300px 30px 300px;
+   position: relative;
+   top: 20px;
+   bottom: 0px;
+    border: 3px solid;
+    border-radius: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 5% 0% 5% 0%;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+h2{
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: linear-gradient(to bottom right, #ebebeb,#7a1cac);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.project{
+    width: 300px;
+    text-align: center;
+}
+
+.project img {
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #25032e;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;  
+
+}
+
+.project img:hover {
+    transform: scale(1.03);
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 20px;
+    font-size: 0.85em;
+    color: #140b0b;
+
+}
+
+h6 {
+    font-size: small;
+}
